@@ -1,8 +1,46 @@
+/* UTILITY */
+
+.padding-0{
+    padding: 0 !important;   
+}
+
+
 .ml_15{
     margin-left: 15px;
 }
 
+/*  /UTILITY */
+
+/* NAV */
 nav i{
-    font-size: 30px;
-   /*  color: white; */
+    font-size: 10x;
+    color: white;
 }
+nav a {
+    color: white;
+}
+
+#left_menu{
+    background-color: #080B12;
+    height: 100vh;
+    z-index: 2;
+}
+
+#left_menu a > img{
+    width:15%;
+    padding-top: 5px;
+}
+#left_menu a > h2{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    
+}
+
+#top_menu nav{
+    z-index: 1;
+}
+
+#upgrade_btn{
+    border:1px solid white;
+}
+/* /NAV */
