@@ -4,9 +4,16 @@
     padding: 0 !important;   
 }
 
+.margin-t-b{
+    margin: 10px 0;
+}
 
-.ml_15{
+/* .ml_15{
     margin-left: 15px;
+} */
+
+.fontsize15{
+    font-size:50px;
 }
 
 /*  /UTILITY */
@@ -44,3 +51,8 @@ nav a {
     border:1px solid white;
 }
 /* /NAV */
+
+#bottom_menu{
+    width:100%;
+    display: ;
+}
