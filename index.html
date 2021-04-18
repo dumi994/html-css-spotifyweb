@@ -20,8 +20,8 @@
     <main>
         <div id="wrapper">
             <div class="container-fluid">
-                <div class="row row-cols-2">
-                    <div class="col col-sm-2 flex-column justify-content-between">
+                <div id="" class="row row-cols-2">
+                    <div id="sidebar" class="col col-sm-2 flex-column justify-content-between">
                         <div id="top_menu" class="flex-column">
                             <img src="./assets/img/logo.svg" alt="" class="img-fluid pad-l-1">
                             <ul class="nav flex-column">
@@ -44,26 +44,28 @@
                             <div id="play_list" class="">
                                 <h3><i class="fas fa-plus-square"></i> Playlist</h3>
                                 <h4>Crea playlist</h4>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Nome playlist</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Nome playlist</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Nome playlist</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Nome playlist</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Nome playlist</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Nome playlist</a>
-                                    </li>
-                                </ul>
+                                <div class="cont_playlist">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Nome playlist</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Nome playlist</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Nome playlist</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Nome playlist</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Nome playlist</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Nome playlist</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div id="bottom_menu">
@@ -74,7 +76,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-sm-10 ">
+                    <div id="main_col" class="col col-sm-10 ">
                         <!-- nav -->
                         <div class="col col-sm-12 bg_darkgray">
                             <ul class="nav justify-content-end">
@@ -91,24 +93,62 @@
                             <div class="top_main">
                                 <ul class="nav justify-content-center">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#">In evidenza</a>
+                                        <a class="nav-link active text-secondary" href="#">In evidenza</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Poadcast</a>
+                                        <a class="nav-link text-secondary" href="#">Poadcast</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Classifiche</a>
+                                        <a class="nav-link text-secondary" href="#">Classifiche</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Generi e mood</a>
+                                        <a class="nav-link text-secondary" href="#">Generi e mood</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Nuove uscite</a>
+                                        <a class="nav-link text-secondary" href="#">Nuove uscite</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Scopri</a>
+                                        <a class="nav-link text-secondary" href="#">Scopri</a>
                                     </li>
                                 </ul>
+                            </div>
+                            <div id="cards" class="row">
+                                <div id="height_calc" class="container">
+                                    <h2 class="text-white">Recently played</h2>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="my_card">
+                                            <img src="./assets/img/metal_lifting.jpg" alt="">
+                                            <h4 class="text-secondary">Heavy Metal</h4>
+                                            <p>subtitle</p>
+                                        </div>
+                                        <div class="my_card">
+                                            <img src="./assets/img/stranger.jpeg" alt="">
+                                            <h4 class="text-secondary">Stranger Things</h4>
+                                            <p>subtitle</p>
+                                        </div>
+                                        <div class="my_card">
+                                            <img src="./assets/img/aquietplace.jpeg" alt="">
+                                            <h4 class="text-secondary">Heavy Metal</h4>
+                                            <p>subtitle</p>
+                                        </div>
+                                        <div class="my_card">
+                                            <img src="./assets/img/split.jpeg" alt="">
+                                            <h4 class="text-secondary">Heavy Metal</h4>
+                                            <p>subtitle</p>
+                                        </div>
+                                        <div class="my_card">
+                                            <img src="./assets/img/cure.jpeg" alt="">
+                                            <h4 class="text-secondary">Heavy Metal</h4>
+                                            <p>subtitle</p>
+                                        </div>
+                                        <div class="my_card">
+                                            <img src="./assets/img/sinister.jpeg" alt="">
+                                            <h4 class="text-secondary">Heavy Metal</h4>
+                                            <p>subtitle</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- Main -->
