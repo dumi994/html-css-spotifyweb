@@ -39,33 +39,36 @@ footer{
     background-color: #141922;
 }
 
-/* \\\\\\\\\\\ UTILITY \\\\\\\\\\\\\ */
-
 .img_small{
     width:25px;
 }
 
+.pad-l-1{
+    padding-left: 1rem;
+}
+/* \\\\\\\\\\\ UTILITY \\\\\\\\\\\\\ */
+
+
 /* \\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\*/
 #top_menu{
-    height: 70%;
-    padding:10px 0
+    height: 80%;
+    padding:10px 0;
+    overflow:auto;
 }
 
+
+
 #bottom_menu{
-    height:10%;
-    padding-top:30%;
     color:gray;
+    height: 10%;
 }
 
 #play_list{
-    width:60%;
-    overflow: hidden;
+    height:60%;
+   /*  overflow: auto; */
 }
 
-#user,
-#install{
-    width:100%%;
-}
+
 
 #user i{
     width:30px;
@@ -83,9 +86,21 @@ footer{
     padding-bottom: 5px;
     border-bottom: 1px solid gray;
     width:100%;
+    z-index: 4;
 }
 
-
+#play_list ul li a{
+    padding:0;
+    color:#6B6B6B;
+}
+#play_list h4{
+    padding:0;
+    color:#6B6B6B;
+}
+#play_list{
+    width:calc(100% - 10%);
+    padding:0 1rem;
+}
 /* \\\\\\\\\\\\\\\ /HEADER \\\\\\\\\\\\\\\*/
 
 nav{
