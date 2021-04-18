@@ -165,9 +165,10 @@ nav{
     margin-left:10px;
     height: 40px;
 }
-#player_description h5{
+
+/* #player_description h5{
     margin-bottom:0;!important
-}
+} */
 
 #top_player{
     display: inline-block;
@@ -192,6 +193,10 @@ nav{
     margin-top:10px;
     width:75px;
 }
+.player_btn_lg{
+    font-size: 20px;
+}
+
 #bottom_player div:first-child, 
 #bottom_player div:last-child{
     padding:0 10px;
