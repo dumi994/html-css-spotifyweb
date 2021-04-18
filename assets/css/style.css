@@ -50,6 +50,20 @@ footer{
 
 
 /* \\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\*/
+
+nav{
+    background-color: gray;
+    height: 100px;
+}
+
+
+
+#wrapper ul li a > span{
+    border:1px solid white;
+    border-radius: 1rem;
+    vertical-align: middle;
+}
+
 #top_menu{
     height: 80%;
     padding:10px 0;
@@ -103,15 +117,10 @@ footer{
 }
 /* \\\\\\\\\\\\\\\ /HEADER \\\\\\\\\\\\\\\*/
 
-nav{
-    background-color: gray;
-    height: 100px;
+/* \\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\*/
+.top_main{
+    width:100%;
 }
 
+/* \\\\\\\\\\\\\\\  /MAIN \\\\\\\\\\\\\\\*/
 
-
-#wrapper ul li a > span{
-    border:1px solid white;
-    border-radius: 1rem;
-    vertical-align: middle;
-}
