@@ -1,5 +1,7 @@
 /* \\\\\\\\\\\ REGOLE GENERALI  \\\\\\\\\\\\\\\\ */
-
+#logo{
+    width:75%;
+}
 #wrapper{
     width:100%;
     height: calc(100vh - 70px);
@@ -55,6 +57,7 @@ footer{
 .pad-l-1{
     padding-left: 1rem;
 }
+
 /* \\\\\\\\\\\ UTILITY \\\\\\\\\\\\\ */
 
 
@@ -83,7 +86,7 @@ nav{
 
 #bottom_menu{
     color:gray;
-    height: 10%;
+    height: 20%;
 }
 
 #play_list{
@@ -138,13 +141,23 @@ nav{
 .top_main{
     width:100%;
 }
+.bor_bot:after{
+    content: '';
+    display: block;
+    width:40px;
+    margin:auto;
+    height:2px;
+    background-color: limegreen;
+}
 
 .my_card img{
-    width:150px;
+   /*  width:150px; */
     margin:10px;
     max-width: 150px;
 }
-
+.my_card h5, p{
+    text-align: center;
+}
 
 /* \\\\\\\\\\\\\\\  /MAIN \\\\\\\\\\\\\\\*/
 
@@ -201,3 +214,8 @@ nav{
 #bottom_player div:last-child{
     padding:0 10px;
 }
+
+
+/* .row {
+    --bs-gutter-x:0;
+} */
