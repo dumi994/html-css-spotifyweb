@@ -39,6 +39,12 @@ footer{
     height:calc(100vh - 70px);
 }
 
+
+#play_list ul li a:hover {
+    color:white;
+}
+
+
 /* \\\\\\\\\\\ REGOLE GENERALI  \\\\\\\\\\\\\\\\ */
 
 /* \\\\\\\\\\\ UTILITY \\\\\\\\\\\\\ */
@@ -81,6 +87,10 @@ nav{
     padding:10px 0;
     overflow-y:hidden;
 }
+.mob{
+    display: none;
+}
+
 
 #bottom_menu{
     color:gray;
@@ -152,34 +162,31 @@ nav{
     position: relative;
 }
 .my_card img{
-    margin:10px;
     max-width: 150px;
 }
 .my_card h5, p{
     text-align: center;
 }
-
-.my_card > img:hover{
+.img_overlay{
+    position:relative;
     margin:10px;
-    max-width: 150px;
-    opacity:30%;
 }
 .play{
-    opacity:0;
-    position:absolute;
-    top:50px;
-    left:50px;
-}
-.my_card .play:hover{
+    background-color:rgba(0, 0, 0, .7);
     width:100%;
-    opacity:100%;
+    height: 100%;
     position:absolute;
-    top:50px;
-    left:50px;
+    top:0;
+    left:0;
+    display:none;
+    align-items: center;
+    justify-content: center;
     font-size: 50px;
-    border-color: 5px solid red;
 }
+.img_overlay:hover .play{
+    display:flex;
 
+}
 /* \\\\\\\\\\\\\\\  /MAIN \\\\\\\\\\\\\\\*/
 
 /* \\\\\\\\\\\\\\\  FOOTER \\\\\\\\\\\\\\\*/
@@ -193,8 +200,8 @@ nav{
 #player_icons{
     padding:20px;
 }
-#player_icons p{
-    margin:5px;
+#player_icons div{
+    margin-right:20px;
 }
 
 #player_description{
@@ -259,7 +266,54 @@ nav{
 }
 /* \\\\\\\\\\\\\\\  /FOOTER \\\\\\\\\\\\\\\*/
 
-
+.logo_piccolo{
+    display: none;
+}
 /* .row {
     --bs-gutter-x:0;
 } */
+
+/* ||||||||||||||||||||| MEDIA QUERY |||||||||||||||||| */
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width:575.8px){
+    #top_menu ul li span{
+        display: none;
+    }
+    .logo_piccolo{
+        display: block;
+    }
+    
+}
+
+@media (min-width: 576px) {
+    #top_menu{
+        height: 100%;
+        padding:10px 0;
+        overflow-y:hidden;
+    }
+    .mob{
+        display: block;
+    }
+    
+    
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* ||||||||||||||||||||| MEDIA QUERY |||||||||||||||||| */
