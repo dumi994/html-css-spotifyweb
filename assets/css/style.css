@@ -65,8 +65,12 @@ footer{
 }
 
 /* \\\\\\\\\\\ UTILITY \\\\\\\\\\\\\ */
-
-
+a{
+    color:gray;
+}
+a:hover{
+    color:white;
+}
 /* \\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\*/
 
 nav{
