@@ -20,7 +20,7 @@ main{
 }
 #main_content{
     height:calc(100vh - 111px);
-    overflow:auto;
+    overflow-x:hidden;
 }
 .height_calc{
     height:calc(100vh - 70px);
@@ -77,12 +77,10 @@ nav{
 }
 
 #top_menu{
-    height: 70%;
+    height: 100%;
     padding:10px 0;
     overflow-y:hidden;
 }
-
-
 
 #bottom_menu{
     color:gray;
@@ -90,12 +88,11 @@ nav{
 }
 
 #play_list{
-    height:60%;
-    overflow-y: hidden;
+    height:100%;
 }
-.cont_playlist{
+.play_list ul{
     overflow-y:auto;
-    
+    height:70%;
 }
 
 
@@ -150,13 +147,34 @@ nav{
     background-color: limegreen;
 }
 
+.my_card{
+    position: relative;
+}
 .my_card img{
-   /*  width:150px; */
     margin:10px;
     max-width: 150px;
 }
 .my_card h5, p{
     text-align: center;
+}
+
+.my_card > img:hover{
+    margin:10px;
+    max-width: 150px;
+    opacity:30%;
+}
+.play{
+    opacity:0;
+    position:absolute;
+    top:50px;
+    left:50px;
+}
+.my_card .play:hover{
+    opacity:1;
+    position:absolute;
+    top:50px;
+    left:50px;
+    font-size: 50px;
 }
 
 /* \\\\\\\\\\\\\\\  /MAIN \\\\\\\\\\\\\\\*/
