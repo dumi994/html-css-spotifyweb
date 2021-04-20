@@ -225,7 +225,7 @@ nav{
 
 #player_icons{
     font-size: 15px;
-    display:block;
+    display:none;
     padding:5px 0;
 }
 #player_icons div{
@@ -320,6 +320,10 @@ nav{
         display: block;
         
     }
+    .btn_principali{
+        display: none;
+
+    }
     
 }
 @media (min-width:420.8px){
@@ -329,9 +333,6 @@ nav{
     }
     .player_btn_lg>i{
         font-size:12px;
-    }
-    #player_icons{
-        margin-left: 30px;
     }
 }
 
@@ -421,8 +422,7 @@ nav{
     }
     
     #player_icons{
-        /* display:block;
-        padding:5px 0; */
+        display: inline-block;
         margin-left:60px;
     }
 
@@ -467,28 +467,15 @@ nav{
     }
     
 }
-/* @media (max-width: 768px) { 
-    .btn_principali{
-        font-size: 11px;
-        margin-bottom: 0;
-    }
-    
-    #top_menu p{
-        display: inline-block;
-        font-size: 15px;
-    }
-    
-} */
+
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .img_small{
-        width:25px;
+        width:15px;
     }
     #top_menu p{
         display: inline-block;
-        font-size: 18px;
-
     }
     #top_menu{
         padding:10px 0;
@@ -499,7 +486,6 @@ nav{
         display: flex;
         flex-wrap: wrap;
         padding:3px;
-        font-size:15px;
     }
     #play_list h4 h3, i{
         font-size: 30px;
@@ -507,7 +493,7 @@ nav{
         
     }
     #play_list h4{
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .btn_principali{
@@ -533,7 +519,10 @@ nav{
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
+    #top_menu p {
+        display: inline-block;
+        font-size: 18px;
+    }
  }
 
 /* ||||||||||||||||||||| MEDIA QUERY |||||||||||||||||| */
