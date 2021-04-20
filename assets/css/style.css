@@ -224,16 +224,19 @@ nav{
 }
 
 #player_icons{
-    padding:20px;
+    font-size: 15px;
+    display:block;
+    padding:5px 0;
 }
 #player_icons div{
     margin-right:20px;
 }
 
-/* #player_description{
-    margin-left:10px;
-    height: 40px;
-} */
+
+#player_icons i{
+    font-size: 15px;
+}
+
 
 #player_description h5, span{
     font-size: 12px;
@@ -285,20 +288,8 @@ nav{
 
 
 #right_footer i{
-   /*  padding-right: 10px; */
     font-size: 12px;
 }
-
-/* #right_footer .right_footer_icons:after{
-    content: '';
-    width:30%;
-    display: inline-block;
-    border:1px solid gray;
-    margin:10px 10px 10px 0px;
-    border-radius: 15px;
-    background-color: gray; 
-    align-self: center;
-} */
 
 #top_player i{
     font-size: 20px;
@@ -314,14 +305,6 @@ nav{
     display: none;
 }
 
-#player_icons{
-    display:block;
-    padding:5px 0;
-  /*   margin-left:40px; */
-}
-#player_icons i{
-    font-size: 18px;
-}
 
 /* ||||||||||||||||||||| MEDIA QUERY |||||||||||||||||| */
 /* 
@@ -337,7 +320,6 @@ nav{
         display: block;
         
     }
-    
     
 }
 
