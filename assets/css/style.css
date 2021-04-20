@@ -322,6 +322,19 @@ nav{
     }
     
 }
+@media (min-width:420.8px){
+    #top_player i{
+        font-size: 10px;
+        margin-right:0;
+    }
+    .player_btn_lg>i{
+        font-size:12px;
+    }
+    #player_icons{
+        margin-left: 30px;
+    }
+}
+
 
 @media (min-width: 576px) {
     #logo{
@@ -377,16 +390,21 @@ nav{
         height:50%;
     }
     /* bottom menu */
-    #install{
-        
+    #install i{
+        font-size: 15px;
     }
 
     #install{
         padding-bottom: 5px;
         border-bottom: 1px solid gray;
         width:100%;
-        z-index: 4;
+       /*  z-index: 4; */
         font-size: 13px;
+    }
+
+    #install span{
+        display: inline-block;
+        padding:0;
     }
     #user{
         font-size: 13px;
@@ -436,7 +454,7 @@ nav{
     
     #top_menu p{
         display: inline-block;
-        font-size: 13px;
+        font-size: 11px;
     }
 
     #player_icons{
@@ -469,25 +487,27 @@ nav{
     }
     #top_menu p{
         display: inline-block;
-     /*    font-size: 17px;
-        padding:0.5rem 1rem; */
+        font-size: 18px;
+
     }
     #top_menu{
-        padding:0.5rem 1rem;
+        padding:10px 0;
     }
+
 
     #play_list ul li a {
         display: flex;
         flex-wrap: wrap;
         padding:3px;
+        font-size:15px;
     }
     #play_list h4 h3, i{
-        font-size: 25px;
+        font-size: 30px;
         padding:5px 0;
         
     }
     #play_list h4{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .btn_principali{
@@ -499,6 +519,14 @@ nav{
         padding-right: 5px;
         font-size: 18px;
     }
+    #play_list ul li{
+        width:100%;
+    }
+    
+    #bottom_menu #install i, #user i{
+        font-size:20px;
+    }
+}
  }
     
  }
