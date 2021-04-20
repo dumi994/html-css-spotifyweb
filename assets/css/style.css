@@ -97,10 +97,10 @@ nav{
 }
 
 #top_menu ul li a{
-    width:30px;
+   /*  width:30px; */
     padding: 5px 0 5px 5px;
 }
-}
+
 .btn_principali{
     display: none;
     font-size: 8px;
@@ -108,17 +108,6 @@ nav{
 .mob{
     display: none;
 }
-
- /* /top menu */
-
-
- /* bottom menu */
-
-#bottom_menu{
-    color:gray;
-    height: 20%;
-}
-
 #play_list{
     display: none;
     
@@ -126,28 +115,6 @@ nav{
 #play_list ul{
     overflow-y:auto;
     height:50%;
-}
-
-
-
-#user i{
-    width:30px;
-    height:30px;
-    border: 1px solid gray;
-    background-color: gray;
-    border-radius: 50%;
-    color:white;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 10px;
-}
- /* bottom menu */
-
-#install{
-    padding-bottom: 5px;
-    border-bottom: 1px solid gray;
-    width:100%;
-    z-index: 4;
 }
 
 #play_list ul li a{
@@ -162,6 +129,38 @@ nav{
     width:calc(100% - 10%);
     padding:0 1rem;
 }
+ /* /top menu */
+
+
+ /* bottom menu */
+
+#bottom_menu{
+    color:gray;
+    height: 20%;
+}
+
+#install>span{
+    display: none;
+    padding-left: 8px;
+}
+#install{
+    padding-left:8px;
+}
+#user i{
+    width:30px;
+    height:30px;
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 50%;
+    color:white;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 0;
+}
+#user span{
+    display: none;
+}
+ /* bottom menu */
 
 #cards{
     padding:0 10px;
@@ -213,7 +212,11 @@ nav{
 /* \\\\\\\\\\\\\\\  /MAIN \\\\\\\\\\\\\\\*/
 
 /* \\\\\\\\\\\\\\\  FOOTER \\\\\\\\\\\\\\\*/
+/* #left_player{
+    font-size: 12px;
+    margin:0;
 
+} */
 .img_player{
     height:60px;
     padding:10px 5px;
@@ -227,9 +230,13 @@ nav{
     margin-right:20px;
 }
 
-#player_description{
+/* #player_description{
     margin-left:10px;
     height: 40px;
+} */
+
+#player_description h5, span{
+    font-size: 12px;
 }
 
 #top_player{
@@ -257,11 +264,9 @@ nav{
 
 .player_btn{
     margin-top:10px;
-    width:75px;
+    width:25px;
 }
-.player_btn_lg{
-    font-size: 20px;
-}
+
 
 #bottom_player div:first-child, 
 #bottom_player div:last-child{
@@ -287,14 +292,29 @@ nav{
     background-color: gray; 
     align-self: center;
 }
+
+#top_player i{
+    font-size: 20px;
+}
+#top_player .player_btn_lg i{
+    font-size: 25px;
+    margin-right:10px;
+}
+
 /* \\\\\\\\\\\\\\\  /FOOTER \\\\\\\\\\\\\\\*/
 
 .logo_piccolo{
     display: none;
 }
-/* .row {
-    --bs-gutter-x:0;
-} */
+
+#player_icons{
+    display:block;
+    padding:5px 0;
+  /*   margin-left:40px; */
+}
+#player_icons i{
+    font-size: 18px;
+}
 
 /* ||||||||||||||||||||| MEDIA QUERY |||||||||||||||||| */
 /* 
@@ -308,6 +328,7 @@ nav{
     }
     .logo_piccolo{
         display: block;
+        
     }
     
     
@@ -346,6 +367,7 @@ nav{
     }
 
     #play_list{
+        display: inline-block;
         padding-left:0;
         padding-right: 0;
         height:70%;
@@ -367,11 +389,34 @@ nav{
     }
     /* bottom menu */
     #install{
+        
+    }
+
+    #install{
+        padding-bottom: 5px;
+        border-bottom: 1px solid gray;
+        width:100%;
+        z-index: 4;
         font-size: 13px;
     }
     #user{
         font-size: 13px;
         padding-bottom: 5px;
+    }
+    #user span{
+        display: inline-block;
+    }
+
+
+    .player_btn{
+        margin-top:10px;
+        width:40px;
+    }
+    
+    #player_icons{
+        /* display:block;
+        padding:5px 0; */
+        margin-left:60px;
     }
  }
 
@@ -386,6 +431,15 @@ nav{
     #top_menu p{
         display: inline-block;
         font-size: 13px;
+    }
+
+    #player_icons{
+        display:flex;
+        padding:20px 10px 0 0;
+        
+    }
+    #player_icons i{
+        font-size: 18px;
     }
     
 }
