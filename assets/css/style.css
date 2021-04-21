@@ -187,13 +187,14 @@ nav{
 .my_card img{
     max-width: 150px;
 }
-.my_card h5, p{
+.my_card h4, h5, p{
     text-align: center;
 }
 .img_overlay{
     position:relative;
     margin:10px;
 }
+
 .play{
     background-color:rgba(0, 0, 0, .7);
     width:100%;
